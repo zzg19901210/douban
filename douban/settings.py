@@ -54,10 +54,11 @@ DOWNLOAD_DELAY = 0.5
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
+DOWNLOADER_MIDDLEWARES = {
 #    'douban.middlewares.MyCustomDownloaderMiddleware': 543,
 #    'douban.middlewares.my_proxy ': 543,
-#}
+   'douban.middlewares.my_useragent': 543,
+}
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
